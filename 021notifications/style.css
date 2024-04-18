@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');;
+
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Verylightgrayishblue: hsl(210, 60%, 98%);
+    --Lightgrayishblue1: hsl(211, 68%, 94%);
+    --Lightgrayishblue2: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Darkgrayishblue: hsl(219, 12%, 42%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+    font-size: 16px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans';
+}
+
+body {
+    height: 100vh;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding-block: 1rem;   
+    max-width: 800px; 
+}
+
+.notific-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.counter {
+    font-size: .9rem;
+    display: inline-block;
+    padding: .2em .7em;
+    font-weight: 800;
+    color: #fff;
+    background: hsl(219, 85%, 26%);
+    border-radius: 5px;
+    margin-left: .5rem;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: hsl(224, 21%, 14%);
+    position: relative;
+}
+
+.mark {
+    font-size: .8rem;
+    color: hsl(219, 12%, 42%);
+    font-weight: 600;
+}
+
+.notif-wrapper {
+    display: flex;
+    margin-bottom: .8rem;
+    padding: 1em;
+    
+}
+
+.notif-wrapperpic {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .8rem;
+    padding: 1em;
+}
+
+.active {
+    border-radius: 10px;
+    background-color: hsl(205, 33%, 90%, .5);
+}
+
+.notif::after{
+    content: '';
+    height: .5em;
+    width: .5em;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+    position: absolute;
+    bottom: .4em;
+    margin-left: .5em;
+    
+    
+}
+
+
+
+.avatar {
+    height: 2.5rem;
+    margin-right: 1em;
+}
+
+.avatar-wrap{
+    display: flex;
+}
+
+.name {
+    font-weight: 800;
+    font-size: .8rem;
+    color: hsl(224, 21%, 14%);
+}
+
+p {
+    font-size:.8rem;
+    margin-bottom: .5em;
+    font-weight: 600;
+    color: hsl(219, 14%, 63%);
+    position: relative;
+}
+
+.boldgray {
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+}
+
+.time {
+    color: hsl(219, 14%, 63%);
+}
+
+.blue {
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+}
+
+.comment {
+    padding: 1em 1em;
+    outline: 1px solid hsl(219, 12%, 42%, .5);
+    border-radius: 5px;
+}
+
+.commented {
+    height: 3rem;
+    border-radius: 5px;
+    
+}
+
+.mark:hover,
+.name:hover,
+.blue:hover,
+.boldgray:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+.comment:hover {
+    outline: none;
+    cursor: pointer;
+    background-color: hsl(205, 33%, 90%, .5);
+}
+
+@media screen and (min-width: 100px){
+    body {
+        background-color: hsl(205, 33%, 90%, .5);
+
+    }
+
+    .container {
+        margin-top: 4rem;
+        background-color: #fff;
+        border-radius: 15px;
+    }
+
+    .notific-header {
+        width: 90%;
+        margin: 0rem auto;
+    }
+
+    .notif-wrapper,
+    .notif-wrapperpic {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    h1 {
+        margin: 1rem 0;
+    }
+}

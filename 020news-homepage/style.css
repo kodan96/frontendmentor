@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --Softorange: hsl(35, 77%, 62%);
+    --Softred: hsl(5, 85%, 63%);
+    --Offwhite: hsl(36, 100%, 99%);
+    --Grayishblue: hsl(233, 8%, 79%);
+    --Darkgrayishblue: hsl(236, 13%, 42%);
+    --Verydarkblue: hsl(240, 100%, 5%);
+    font-size: 15px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-block: 3rem;
+}
+
+.nav-items {
+    transform: translateX(0);
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: var(--Darkgrayishblue);
+    cursor: pointer;
+}
+
+.nav-items a:hover {
+    color: var(--Softred);
+}
+
+.nav-items a:not(:last-child){
+    margin-right: 2rem;
+}
+
+.open,
+.close {
+    display: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300 px repeat(2, 150px);
+    grid-template-areas: 'hero hero new'
+                        'main complementary new'
+                        'secondary1 secondary2 secondary3';
+    row-gap: 3rem;
+    column-gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.hero {
+    grid-area: hero;
+    grid-column: 1 / span 2;
+    
+}
+
+.hero img {
+    width: 100%;
+}
+
+.new {
+    grid-area: new;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+    background-color: var(--Verydarkblue);
+    padding: 1em;
+    color: var(--Offwhite);
+}
+
+.new h2 {
+    font-size: 2rem;
+    color: var(--Softorange);
+    margin-block: .5em;
+}
+
+.new h3 {
+    font-size: 1.5rem;
+    margin-bottom: .8em;
+}
+
+.new h3:hover {
+    color: var(--Softorange);
+    cursor: pointer;
+}
+
+.news {
+    padding-block: 2.5em;
+    /* border-bottom: 1px solid var(--Offwhite); */
+}
+
+.news p {
+    font-size: 1.1em;
+    font-weight: 200;
+    line-height: 1.em;
+}
+
+.main-heading {
+    grid-area: main;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    font-size: 2rem;
+}
+
+.new > .news:not(:last-child){
+    border-bottom: 1px solid var(--Offwhite);
+}
+
+.complementary {
+    grid-area: complementary;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.complementary p {
+    color: var(--Darkgrayishblue);
+    line-height: 1.5em;
+    margin-bottom: 2em;
+}
+
+.complementary a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1em 2em;
+    background-color: var(--Softred);
+    color: #fff;
+    margin-top: 2em;
+}
+
+.complementary a:hover {
+    color: #fff;
+    background-color: var(--Verydarkblue);
+}
+
+.animate {
+    transition: .4s ease-in;
+}
+
+.pcs,
+.laptops,
+.gaming {
+    display: flex;
+    margin-bottom: 3rem;
+}
+.text-wrapper {
+    margin-left: 1rem;
+}
+
+.text-wrapper span {
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--Grayishblue);
+}
+
+.text-wrapper h4 {
+    font-weight: 800;
+    margin-block: 1em;
+}
+
+.text-wrapper h4:hover {
+    color: var(--Softred);
+    cursor: pointer;
+}
+
+.text-wrapper p {
+    line-height: 1.5em;
+    color: var(--Darkgrayishblue);
+}
+
+@media screen and (max-width:768px) {
+    :root {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .hero img {
+        content: url(img/image-web-3-mobile.jpg);
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-block: .5em;
+    }
+
+    .complementary p {
+        margin-bottom: 0;
+    }
+
+    .complementary a {
+        margin-block: 2em 4em;
+        padding: 1em 2em;
+        letter-spacing: 4px;
+    }
+    main {
+        display: block;
+
+    }
+    .new {
+        margin-bottom: 4rem;
+    }
+
+    .new h3 {
+        font-size: 1.3em;
+    }
+
+    .news p {
+        line-height: 1.5em;
+    }
+
+    .pcs,
+    .laptops,
+    .gaming {
+        margin-bottom: 2rem;
+    }
+
+    .open {
+        display: inline;
+        position: absolute;
+        top: 45%;
+        right: 8px;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .close {
+        position: absolute;
+        top: 40%;
+        right: 10px;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        padding-top: 8rem;
+        gap: 3rem;
+        height: 100vh;
+        background: var(--Offwhite);
+        width: 70%;
+        padding-left: 3rem;
+        border-left: 2px solid hsla(236, 13%, 42%, .5);
+        z-index: 100;
+        transform: translateX(110%);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .new h3 {
+        font-size: 2em;
+    }
+}
