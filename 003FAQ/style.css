@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Lightpink: hsl(275, 100%, 97%);
+    --Grayishpurple: hsl(292, 16%, 49%);
+    --Darkpurple: hsl(292, 42%, 14%);
+    font-family: 'Work Sans';
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Lightpink);
+    background-image: url(img/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    isolation: isolate;
+}
+
+/* Univeral styles */
+
+h1 {
+    display: inline-block;
+    color: var(--Darkpurple);
+    margin-left: .8em;
+}
+
+h2 {
+    font-size: 1.2rem;
+    display: inline-block;
+    color: var(--Darkpurple);
+    margin-block: 1.3em;
+}
+
+p {
+    color: var(--Grayishpurple);
+}
+
+/* Layout Styles*/
+
+.container {
+    width: 90%;
+    background-color: var(--White);
+    border-radius: 10px;
+    margin-top: 10rem;
+    max-width: 600px;
+}
+
+.content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.question-header {
+    display: flex;
+    border-bottom: 2px solid var(--Lightpink);
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+
+.hide {
+    display: none;
+}
+
+.btn-hide {
+    display: none;
+    cursor: pointer;
+}
+
+.btn-toggle {
+    display: none;
+}
+
+.plus {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(img/background-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        isolation: isolate;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        font-size: 18px;
+    }
+}

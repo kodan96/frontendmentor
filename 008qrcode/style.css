@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+    font-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', 'Helvetica Neue';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--Lightgray);
+}
+
+.container {
+    width: 337px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding-block: 1rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.img-container {
+    width: 90%;
+    margin: 0 auto;
+}
+.content-container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: var(--Darkblue);
+    margin-block: 1em;
+}
+
+p {
+    font-size: 1.2rem;
+    color: var(--Grayishblue);
+    margin-bottom: 1.2em;
+}

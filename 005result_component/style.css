@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    -Cobaltblue: hsl(234, 85%, 45%);
+    --Lightslateblue: hsl(252, 100%, 67%);
+    --Lightroyalblue: hsl(241, 81%, 54%);
+    --Violetbluecircle: hsla(256, 72%, 46%, 1);
+    --Persianbluecircle: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+    font-size: 16px;
+    font-family: 'Hanken Grotesk', 'Helvetica Neue', Helvetica, Arial;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+/* Header layout */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.result-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.result {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+/* Typography */
+h1 {
+    font-size: 1.2rem;
+    color: var(--Lightlavender);
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+h2 {
+    font-size: 4rem;
+    color: var(--Lightlavender);
+}
+
+.of {
+    color: var(--Lightlavender);
+    font-weight: 600;
+}
+
+h3 {
+    margin-block: 1rem;
+    color: var(--Darkgrayblue);
+}
+
+h5 {
+    font-size: 1.5rem;
+    color: var(--White);
+    font-weight: 500;
+    margin-block: .5em;
+}
+
+p {
+    color: var(--Lightlavender);
+}
+
+/* Header spacing */
+.result h1 {
+    margin-bottom: 1em;
+}
+
+
+
+.points {
+    background-color: #fff;
+    aspect-ratio: 1;
+    height: 150px;
+    margin: .3em auto .5em;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, var(--Violetbluecircle), var(--Persianbluecircle));
+}
+
+.summ1, 
+.summ2,
+.summ3,
+.summ4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+.wrap {
+    display: flex;
+    gap: .8rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--Darkgrayblue);
+    padding: 1em 7em;
+    border-radius: 30px;
+    font-size: 1.1em;
+}
+
+a:hover {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.btnwrap {
+    text-align: center;
+    margin-block: 2em;
+}
+
+.summ1 h4 {
+    color: var(--Lightred);
+}
+
+.summ2 h4 {
+    color: var(--Orangeyyellow);
+}
+
+.summ3 h4 {
+    color: var(--Greenteal);
+}
+
+.summ4 h4 {
+    color: var(--Lightroyalblue);
+}
+
+.summary span {
+    font-weight: 800;
+    color: var(--Darkgrayblue);
+}
+
+.summary p {
+    color: var(--Lightlavender);
+    font-weight: 600;
+}
+
+.summ1 {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.summ2 {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.summ3 {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.summ4 {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--Paleblue);
+    }
+
+    
+    .result,
+    .summary {
+        width: 30%;
+        height: 50%;
+    }
+
+    .result {
+        border-radius: 30px;
+    }
+
+    .summary {
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background-color: #fff;
+        padding: .5rem;
+    }
+}

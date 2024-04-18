@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --darkpurple: #24053E;
+    --davygrey: #584D62;
+    --eucaliptus: #44FFA1;
+    --ghostwhite: #FCF8FF;
+    --white: #FFFFFF;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fraunces', sans-serif;
+}
+
+body {
+    background-image: url(img/wave-haikei.svg);
+    background-repeat: no-repeat;
+    isolation: isolate;
+    background-color: var(--ghostwhite);
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-top: 1em;
+    margin-bottom: .8em;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-top: 1em;
+    margin-bottom: .8em;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.head-logo {
+    padding-block: 2.8rem;
+}
+
+.apply {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: .5px;
+    position: relative;
+}
+.bg1,
+.bg2 {
+    display: none;
+}
+.apply::after {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--eucaliptus);
+}
+
+.hero {
+    text-align: center;
+    position: relative;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 1.2em;
+    background: var(--eucaliptus);
+}
+
+.hero-img {
+    margin-top: 4rem;
+}
+.block {
+    display: block;
+}
+.btn-green {
+    display: inline-block;
+    padding: 1em 1.5em;
+    color: #24053E;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--eucaliptus);
+    font-size: 1.2rem;
+}
+.btn-green:hover {
+    color: var(--eucaliptus);
+    outline: 1px solid var(--eucaliptus);
+    background-color: #24053E;
+}
+
+.details {
+    margin: 4rem auto;
+    max-width: 80%;
+    text-align: center;
+    background-color: var(--ghostwhite);
+    color: var(--darkpurple);
+}
+
+.details span {
+    display: inline-block;
+    font-weight: 600;
+    padding: .75em 1.05em;
+    border: 1px solid var(--darkpurple);
+    border-radius: 50%;
+}
+
+.cta {
+    margin-top: 9rem;
+    text-align: center;
+
+}
+
+.cta-text {
+    background-color: #24053E;
+    color:#FCF8FF;
+    padding: 3rem 2rem;
+    position: relative;
+    bottom: 50px;
+}
+
+.cta-text h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.cta-text p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1.7em;
+    line-height: 1.5em;
+}
+
+.footer-wrap {
+    text-align: center;
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.logo-dark {
+    margin-bottom: 3rem;
+}
+
+.socials {
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 750px){
+    :root {
+        font-size: 20px;  
+    }
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: .5em;
+        font-size: 3rem;
+        max-width: 40%;
+        margin: 0 auto;
+    }
+    
+    .head-logo {
+        padding-block: 1.5rem;
+    }
+    .btn-green {
+        font-size: .8rem;
+        margin-top: 0;
+       
+    }
+    .hero-img {
+        height: 300px;
+        width: auto;
+        margin-top: 2em;
+    }
+
+    .counter {
+        display: inline;
+        float: left;
+        clear: right;
+        margin-right: 2em;
+        margin-block: 3rem;
+    }
+
+    .bg1 {
+        display: inline;
+        position: absolute;
+        top: 10%;
+        left: -200px;
+    }
+    
+    .bg2 {
+        display: inline;
+        position: absolute;
+        right: -100px;
+        top: 30%;
+    }
+    
+
+    .details {
+        text-align: left;
+    }
+
+    .actions {
+        display: flex;
+    }
+    
+    .content {
+        max-width: 80%;
+    }
+
+
+    .cta-text {
+        position: relative;
+        text-align: left;
+        width: 80%;
+        float: right;
+    }
+
+    .cta h3 {
+        font-size: 2.5rem;
+        margin-bottom: .5em;
+    }
+    .cta-text p {
+        font-size: 1rem;
+    }
+
+    .cta-img {
+        position: relative;
+        right:230px;
+        top:70px;
+    }
+
+    .socials {
+        width: 80%;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1200px) {
+    :root {
+        font-size: 24px;  
+    }
+    body {
+        background-image: url(img/wave-haikei3.svg);
+    }
+
+    .btn-green {
+        margin-top: 2rem;
+    }
+
+    .hero-img {
+        height: 400px;
+        width: auto;
+        margin-top: 4rem;
+    }
+
+    .details {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+        gap: 5rem;
+    }
+    
+    .cta-text {
+        width: 70%;
+    }
+
+        
+
+   .cta-img {
+        height: 300px;
+        width: 300px;
+        left: 150px;
+        top: -180px;
+    }
+
+    .counter{
+        float: none;
+          
+    }
+
+}
+    
+
+
+

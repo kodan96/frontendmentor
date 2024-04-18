@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfits', sans-serif;
+}
+
+:root {
+    font-size: 12px;
+    --nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --LengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+/*Universal*/
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Young Serif', serif;
+    color: var(--DarkCharcoal);
+    font-size: 3rem;
+    line-height: 1.1em;
+    font-weight: 500;
+    margin-block: 1em;
+}
+
+p {
+    color: var(--LengeBrown);
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+h2 {
+    color: var(--nutmeg);
+    font-size: 2.5rem;
+    margin-block: 1em;
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+}
+
+li {
+    line-height: 1.5em;
+    color: var(--LengeBrown);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/*Layouts */
+.container {
+    padding: 0 30px;
+}
+
+hr {
+    width: 80%;
+    margin: 1em auto;
+    border: none;
+    height: 2px;
+    background-color: var(--Eggshell);
+}
+
+.prep-time {
+    background-color: hsl(332, 51%, 32%, 0.1);
+    padding: 1.8em;
+    font-size: 1.3rem;
+}
+
+.prep-time h4 {
+    font-size: 1.7rem;
+    color: var(--DarkRaspberry);
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.prep-time ul {
+    margin-left: 3em;
+}
+
+.prep-time li {
+    margin-bottom: 1em;
+}
+
+.prep-time span {
+    font-weight: 800;
+    color: var(--DarkCharcoal);
+}
+
+.ingredients ul{
+    margin-bottom: 2rem;
+}
+
+
+.ingredients li{
+    margin-left: 2rem;
+    margin-bottom: 1em;
+}
+
+.instructions span{
+    font-weight: bold;
+    color: var(--DarkCharcoal);
+}
+
+.instructions ol{
+    margin-bottom: 3rem;
+}
+
+.instructions li{
+    margin-left: 2rem;
+    margin-bottom: 1em;
+}
+
+table {
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+td {
+    padding: 1em;
+    border-bottom: 2px solid var(--Eggshell);
+    font-size: 1.3rem;
+    color: var(--LengeBrown);
+    font-weight: 600;
+}
+
+.left {
+    color: var(--nutmeg);
+    font-weight: 800;
+}
+
+@media screen and (min-width: 1440px) {
+    :root {
+        font-size: 20px;
+    }
+
+    img {
+        width: 92%;
+        margin: 3rem auto;
+        display: block;
+        border-radius: 15px;
+    }
+
+    .container {
+        padding: 0 60px
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+

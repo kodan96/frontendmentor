@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --Yellow: hsl(47, 88%, 63%);
+    font-size: 13px;
+    font-family: 'Figtree', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--Black);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Yellow);
+    
+}
+
+/*Universal styles*/
+
+
+h1 {
+    font-weight: 800;
+    font-size: 1.7rem;
+    margin-block: 1em;
+}
+
+h1:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-style: oblique;
+}
+
+p {
+    font-weight: 600;
+    margin-bottom: .8em;
+}
+
+/*Layout Styles*/
+
+
+.card {
+    max-width: 400px;
+    width: 85%;
+    margin: 0 auto;
+    background-color: var(--White);
+    border-radius: 20px;
+    border: 1px solid var(--Black);
+    box-shadow: 8px 8px var(--Black);
+}
+
+.container {
+    width: 85%;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+.hero {
+    width: 100%;
+    border-radius: 15px;
+}
+span {
+    font-weight: 800;
+    display: inline-block;
+    margin: 1.5em 0 1em;
+    padding: .5em 1em;
+    background-color: var(--Yellow);
+    border-radius: 5px;
+}
+
+.detail {
+    color: var(--Grey);
+    line-height: 1.5em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.user-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-container img {
+    aspect-ratio: 1;
+    height: 35px;
+}
+
+
+
+/*Media queries */
+
