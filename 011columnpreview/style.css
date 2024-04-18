@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding-top: 10vh;
+    background-color: var(--Transparentwhite);
+}
+/* Layout */
+.container {
+    font-weight: 400;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: var(--Transparentwhite);
+    max-width: 800px;
+}
+
+.content-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sedans,
+.suvs,
+.luxury {
+    padding: 2rem;
+}
+
+.sedans {
+    border-radius: 10px 10px 0 0;
+    background-color: var(--Brightorange);
+}
+
+.sedans a {
+    color: var(--Brightorange);
+}
+
+.sedans a:hover {
+    color: #fff;
+    background-color: var(--Brightorange);
+    outline: 1px solid #fff;
+}
+
+.suvs {
+    background-color: var(--Darkcyan);
+}
+
+.suvs a {
+    color: var(--Darkcyan);
+}
+
+.suvs a:hover {
+    background-color: var(--Darkcyan);
+    color: #fff;
+    outline: 1px solid #fff;
+}
+
+.luxury {
+    background-color: var(--Verydarkcyan);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 10vh;
+}
+
+.luxury a {
+    color: var(--Verydarkcyan);
+}
+
+.luxury a:hover {
+    background-color: var(--Verydarkcyan);
+    color: #fff;
+    outline: 1px solid #fff;
+}
+
+
+
+/* Typography */
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    font-size: 2rem;
+    margin-block: 1em;
+}
+
+p {
+    line-height: 1.5em;
+    margin-block: 1em;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em 2em;
+    background-color: var(--Transparentwhite);
+    border-radius: 30px;
+    margin-block: 1em;
+    transition: .3s ease-out .1s;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        height: 100vh;
+    }
+    
+    .container {
+        display: flex;
+    }
+
+    .sedans {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .luxury {
+        border-radius: 0 10px 10px 0;
+    }
+
+    a {
+        margin-top: 3rem;
+    }
+
+   
+}
+

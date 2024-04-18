@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --DesaturatedRed: hsl(0, 36%, 70%);
+    --SoftRed: hsl(0, 93%, 68%);
+    --DarkGrayishRed: hsl(0, 6%, 24%);
+    --Linear135deg: hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+    --Linear135deghsl: hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header img {
+    margin: 2rem 3rem;
+}
+
+
+.hero img {
+    width: 100%;
+    image-rendering: optimizeQuality;
+}
+
+.content {
+    text-align: center;
+    padding-block: 3rem;
+}
+
+.content-container {
+    width: 86%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 8px;
+    color: var(--DarkGrayishRed);
+    margin-bottom: 1.5rem;
+}
+
+span {
+    color: var(--DesaturatedRed);
+    font-weight: 300;
+}
+
+p {
+    color: var(--DesaturatedRed);
+    line-height: 1.5em;
+    margin-bottom: 2em;
+}
+
+input {
+    position: relative;
+    border: 1px solid hsl(0, 6%, 24%, .2);
+    padding: 1.2em;
+    border-radius: 30px;
+    width: 100%;
+    color: hsl(0, 6%, 24%, .7);
+}
+
+input::placeholder {
+    opacity: .5;
+}
+
+.wrapper {
+    position: relative;
+    
+}
+
+.toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.arrow {
+    padding: 1rem 3rem;
+    background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 30px;
+    position: relative;
+    left: 5px;
+    cursor: pointer;
+}
+
+
+.arrow:hover {
+   background:hsl(0, 88%, 85%);
+   box-shadow: -3px 8px 10px 5px hsl(0, 80%, 86%, .8);
+}
+
+.error {
+    text-align: left;
+    margin-left: 1rem;
+    font-size: .8rem;
+    color: red;
+}
+
+.error-icon {
+    position: relative;
+    bottom: 15px;
+    right: 10px;
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    .content {
+        height: 100vh;
+    }
+    :root {
+        font-size: 18px;
+    }
+
+    .hero img {
+        max-width: 45%;
+        float: right;
+        content: url(img/hero-desktop.jpg);
+        height: 100dvh
+       
+
+    }
+    h1,
+    p {
+        max-width: 60%;
+        margin-inline: auto;
+    }
+
+    .content-container {
+        position: relative;
+        top: 25%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 50%;
+        text-align: left;
+        margin-inline: auto;
+        align-items: center;
+    }
+
+    input {
+        width: 30vw;
+    }
+
+    header img {
+        position: absolute;
+        top: 0;
+        margin-left: 18vh;
+    }
+
+    .error-icon {
+        bottom: 20px;
+    }
+}
+
